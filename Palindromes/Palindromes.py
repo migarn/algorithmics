@@ -52,4 +52,4 @@ for i in range (1, 300):
                 print("\t%i + %i = %i" % (component1, component2, currentNumber))
                 digits.clear()
 
-print("The biggest number of transformations has been achieved for '%i' (%i transformations)" % (numberWithMaxTransformations, maxTransformationsNumber))
+print("Hypothesis confirmed. The biggest number of transformations has been achieved for '%i' (%i transformations)." % (numberWithMaxTransformations, maxTransformationsNumber))
