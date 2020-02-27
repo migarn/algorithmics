@@ -21,9 +21,9 @@ def eratostenesList(n):
                 break
         
         if currentNumber >= sqrt(numbers[-1]):
-            print("Wynik działania sita Eratostenesa dla przedziału od %i do %i:\n" %(2, n - 1))
+            print("Sieve of Eratosthenes' result of work for range %i-%i:\n" %(2, n - 1))
             print(numbers)
-            print("\nNa sicie zostało %i liczb" %len(numbers))
+            print("\n%i numbers has remained on the sieve." %len(numbers))
             break
 
         i += 1
@@ -59,9 +59,9 @@ def eratostenesDictionary(n):
                 break
            
         if currentNumber >= sqrt(next(reversed(numbers))):
-            print("Wynik działania sita Eratostenesa dla przedziału od %i do %i:\n" %(2, n - 1))
+            print("Sieve of Eratosthenes' result of work for range %i-%i:\n" %(2, n - 1))
             print(list(numbers.values()))
-            print("\nNa sicie zostało %i liczb" %len(list(numbers.values())))
+            print("\n%i numbers has remained on the sieve." %len(list(numbers.values())))
             break
 
         i = findNextKey(i, numbers)
@@ -88,9 +88,9 @@ def eratostenesArray(n):
                 break
 
         if currentNumber >= sqrt(numbers[-1]):
-            print("Wynik działania sita Eratostenesa dla przedziału od %i do %i:\n" %(2, n - 1))
+            print("Sieve of Eratosthenes' result of work for range %i-%i:\n" %(2, n - 1))
             print(numbers)
-            print("\nNa sicie zostało %i liczb" %len(numbers))
+            print("\n%i numbers has remained on the sieve." %len(numbers))
             break
 
         i += 1
@@ -99,17 +99,17 @@ startPoint = time.time()
 eratostenesList(101)
 endPoint = time.time()
 timeElapsed = (endPoint - startPoint) * 1000
-print("\nCzas wykonania: %i ms (struktura danych - lista)" %timeElapsed)
+print("\nExecution time: %i ms (data structure - list)" %timeElapsed)
 print("\n------------------------------------------------------------\n")
 startPoint = time.time()
 eratostenesDictionary(101)
 endPoint = time.time()
 timeElapsed = (endPoint - startPoint) * 1000
-print("\nCzas wykonania: %i ms (struktura danych - słownik)" %timeElapsed)
+print("\nExecution time: %i ms (data structure - dictionary)" %timeElapsed)
 print("\n------------------------------------------------------------\n")
 startPoint = time.time()
 eratostenesArray(101)
 endPoint = time.time()
 timeElapsed = (endPoint - startPoint) * 1000
-print("\nCzas wykonania: %i ms (struktura danych - tablica)" %timeElapsed)
+print("\nExecution time: %i ms (data structure - array)" %timeElapsed)
   
