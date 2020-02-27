@@ -1,5 +1,5 @@
-upperLimit = 10000000
-print("Liczby Armstronga w zakresie od 1 do %i:" % upperLimit)
+upperLimit = 100000
+print("Armstrong numbers in the range of 1-%i:" % upperLimit)
 
 for i in range (1, upperLimit + 1):
     digits = []
