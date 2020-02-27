@@ -1,8 +1,12 @@
 maxTransformationsNumber = 0
 numberWithMaxTransformations = 0
 
+# Hypothesis: take any natural number. If it is not a palindrome write it
+# backwards and sum both numbers. If result is not a palindrome, continue
+# taking result as a number to check. Break if result is a palindrome.
+
 for i in range (1, 300):
-    print("Sprawdzam hipotezę dla liczby %i:" % i)
+    print("Testing hypothesis for '%i':" % i)
 
     digits = []
     currentNumber = i
@@ -20,7 +24,7 @@ for i in range (1, 300):
                 isPalindrome = (digits[j] == digits[len(digits) - 1 - j])
 
             if isPalindrome:               
-                print("\tDla liczby %i udało się osiągnąć palindrom. Liczba dodatkowych przekształceń: %i\n" % (i, count))
+                print("\tFor '%i' palindrome has been achieved. Number of tranformations: %i\n" % (i, count))
 
                 if count > maxTransformationsNumber:
                     maxTransformationsNumber = count
@@ -48,4 +52,4 @@ for i in range (1, 300):
                 print("\t%i + %i = %i" % (component1, component2, currentNumber))
                 digits.clear()
 
-print("Największa liczba przekształceń została osiągnięta dla liczby %i (%i przekształceń)" % (numberWithMaxTransformations, maxTransformationsNumber))
+print("The biggest number of transformations has been achieved for '%i' (%i transformations)" % (numberWithMaxTransformations, maxTransformationsNumber))
