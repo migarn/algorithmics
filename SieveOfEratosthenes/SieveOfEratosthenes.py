@@ -15,7 +15,7 @@ def eratostenesList(n):
             if numbers[j] % currentNumber == 0:
                 numbers.pop(j)
 
-            j = j + 1
+            j += 1
 
             if j >= len(numbers):
                 break
@@ -26,7 +26,7 @@ def eratostenesList(n):
             print("\nNa sicie zostało %i liczb" %len(numbers))
             break
 
-        i = i + 1
+        i += 1
 
 def findNextKey(intKey, dictionary):
     lastNumberIndex = list(dictionary.keys())[-1]
@@ -34,7 +34,7 @@ def findNextKey(intKey, dictionary):
         if (intKey + 1) in dictionary or (intKey + 1) > lastNumberIndex:
             return intKey + 1
         else:
-            intKey = intKey + 1
+            intKey += 1
 
 def eratostenesDictionary(n):
     numbers = OrderedDict()
@@ -82,7 +82,7 @@ def eratostenesArray(n):
             if numbers[j] % currentNumber == 0:
                 numbers = delete(numbers, j)
 
-            j = j + 1
+            j += 1
 
             if j >= len(numbers):
                 break
@@ -93,7 +93,7 @@ def eratostenesArray(n):
             print("\nNa sicie zostało %i liczb" %len(numbers))
             break
 
-        i = i + 1
+        i += 1
 
 startPoint = time.time()
 eratostenesList(101)
