@@ -19,7 +19,7 @@ def plotChart(formula, minX, maxX):
     pylab.xlabel("x")
     pylab.ylabel("y")
     pylab.grid(True)
-    pylab.title("Wykres funkcji f(x)=%s dla zmiennej x z zakresu od %s do %s" %(formula, minX, maxX))
+    pylab.title("Graph of function f(x)=%s for x from %s to %s" %(formula, minX, maxX))
     pylab.show()
 
 plotChart("y=x*x-6*x+3", -500, 500)
