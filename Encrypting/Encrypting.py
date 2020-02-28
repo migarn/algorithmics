@@ -39,7 +39,7 @@ def cypherTxtFile(filename, key):
     file.write(cypheredString)
     file.close()
 
-    print("Plik '%s' został pomyślnie zaszyfrowany." %filename)
+    print("'%s' file has been encrypted." %filename)
 
 def decypherString(stringToDecypher, key):
     letters = list(string.ascii_uppercase)
@@ -73,10 +73,7 @@ def decypherTxtFile(filename, key):
     file.write(decypheredString)
     file.close()
 
-    print("Plik '%s' został pomyślnie zdeszyfrowany." %filename)
-
-#cypherTxtFile("litwo.txt", 31206)
-decypherTxtFile("OJVWU.txt",31206)
+    print("'%s' file has been decrypted." %filename)
 
 
 
