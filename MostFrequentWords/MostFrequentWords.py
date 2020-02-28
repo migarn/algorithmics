@@ -20,4 +20,4 @@ wordsSorted = sorted(wordsDictionary, key = wordsDictionary.get, reverse = True)
 
 print("20 most frequent words in loaded file:\n")
 for i in range (0, 20):
-    print('%i. "%s" - %i occurences' % (i + 1, wordsSorted[i], wordsDictionary[wordsSorted[i]]))
+    print('%i. "%s" - %i occurrences' % (i + 1, wordsSorted[i], wordsDictionary[wordsSorted[i]]))
