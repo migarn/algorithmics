@@ -26,12 +26,12 @@ mainDeterminant = round(numpy.linalg.det(coefficientMatrix), 13)
 
 if mainDeterminant != 0:
     unknows = [i / mainDeterminant for i in determinants]
-    print("Dla zadanego układu równań wartości niewiadomych obliczono jako:")
+    print("For given system of equations unknowns have been computed as:")
     for i in range(len(unknows)):
         print("x%i = %f" %(i + 1, unknows[i]))
 
 elif all([i == 0 for i in determinants]):
-    print("Zadany układ równań jest nieoznaczony.")
+    print("Given system of equations is indeterminate.")
 
 else:
-    print("Zadany układ równań jest sprzeczny.")
+    print("Given system of equations is inconsistent.")
