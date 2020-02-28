@@ -18,6 +18,6 @@ for i in range(len(wordsList)):
 
 wordsSorted = sorted(wordsDictionary, key = wordsDictionary.get, reverse = True)
 
-print("20 najczęściej występujących słów we wczytanym tekście:\n")
+print("20 most frequent words in loaded file:\n")
 for i in range (0, 20):
-    print('%i. "%s" - liczba wystąpień: %i' % (i + 1, wordsSorted[i], wordsDictionary[wordsSorted[i]]))
+    print('%i. "%s" - %i occurences' % (i + 1, wordsSorted[i], wordsDictionary[wordsSorted[i]]))
